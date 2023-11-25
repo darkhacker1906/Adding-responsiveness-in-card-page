@@ -33,7 +33,7 @@ body {
 }
 .nav-link {
   text-decoration: none;
-  margin-right: 5%;
+  margin-right: 3%;
   color: rgb(122, 121, 121);
   font-size: 15px;
   font-family: "roboto";
@@ -93,6 +93,16 @@ body {
   font-size: 23px;
   margin-top: 3%;
   font-weight: 200;
+  display:flex;
+  flex-direction:row;
+  gap:10px;
+  align-items: center;
+  
+}
+.page_heading{
+  font-weight: 900;
+  font-size: 30px;
+  margin-bottom: 0.75%;
 }
 .card {
   width: 31.5%;
@@ -179,17 +189,25 @@ p {
     width: 36px;
     display: flex;
     margin-left: auto;
-    margin-right: 3%;
+    /* margin-right: 3%; */
   }
   .nav-container {
     margin: 0;
     padding: 0;
   }
 }
-@media (max-width: 650px) {
+@media(max-width:375px){
+  .heading{
+  flex-direction:column;
+  align-items: flex-start;
+  }
+}
+
+@media (max-width: 300px) {
   .nav {
     display: flex;
     flex-direction: column;
-    margin-left: 40%;
+    padding:6px 0px;
+    /* border: 2px solid red; */
   }
 }
